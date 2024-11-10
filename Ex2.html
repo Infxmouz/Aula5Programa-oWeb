@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Tabela de Nomes</title>
+    <style>
+        table {
+            background-color: #CCCCCC;
+            border-collapse: collapse;
+        }
+        
+        th {
+            font-size: 15px;
+            font-weight: 700;
+            background-color: #000033;
+            color: #CCCCCC;
+            padding: 10px;
+        }
+        
+        td {
+            font-size: 14px;
+            background-color: #000066;
+            color: #CCCCCC;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let tabela = document.createElement("table");
+        let cabecalho = tabela.createTHead();
+        let linhaCabecalho = cabecalho.insertRow();
+        
+        let celulaIndice = document.createElement("th");
+        celulaIndice.textContent = "Índice";
+        linhaCabecalho.appendChild(celulaIndice);
+        
+        let celulaNome = document.createElement("th");
+        celulaNome.textContent = "Nome";
+        linhaCabecalho.appendChild(celulaNome);
+        
+        let indice = 1;
+        
+        while (true) {
+            let nome = prompt("Digite um nome (ou clique em Cancelar para sair):");
+            
+            if (nome === null) {
+                break;
+            }
+            
+            let linha = tabela.insertRow();
+            
+            let celulaIndiceNome = linha.insertCell();
+            celulaIndiceNome.textContent = indice++;
+            
+            let celulaNomeUsuario = linha.insertCell();
+            celulaNomeUsuario.textContent = nome;
+        }
+
+        document.body.appendChild(tabela);
+    </script>
+</body>
+</html>

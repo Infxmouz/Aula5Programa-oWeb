@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Tabela Personalizada</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        table td {
+            border: none;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+        }
+        
+        table td:nth-child(even) {
+            background-color: #C6F4D6;
+        }
+        
+        table td:nth-child(odd) {
+            background-color: #F7DC6F;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let colunas = prompt("Digite o numero de colunas:");
+        let linhas = prompt("Digite o numero de linhas:");
+
+        let tabela = document.createElement("table");
+        
+        for (let i = 0; i < linhas; i++) {
+            let linha = tabela.insertRow();
+            
+            for (let j = 0; j < colunas; j++) {
+                let celula = linha.insertCell();
+                celula.innerHTML = `( ${i+1}, ${j+1} )`;
+            }
+        }
+        
+        document.body.appendChild(tabela);
+    </script>
+</body>
+</html>

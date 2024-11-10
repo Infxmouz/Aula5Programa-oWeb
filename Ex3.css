@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+#resultado-maiuscula, #resultado-separar {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#resultado-separar {
+    white-space: pre-wrap;
+}

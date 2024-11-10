@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+.conceito-aprovado {
+    color: green;
+    font-weight: bold;
+}
+
+.conceito-reprovado {
+    color: red;
+    font-weight: bold;
+}
+
+.conceito-avaliacao {
+    color: orange;
+    font-weight: bold;
+}

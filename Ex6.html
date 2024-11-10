@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="Ex6.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Alunos</h1>
+
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite o nome do aluno" required>
+
+            <label for="rgm">RGM:</label>
+            <input type="text" id="rgm" placeholder="Digite o RGM" required>
+
+            <label for="notaP">Nota Parcial (máximo 2 pontos):</label>
+            <input type="number" id="notaP" min="0" max="2" step="0.01" placeholder="0 a 2" required>
+
+            <label for="notaExer">Nota Exercícios (máximo 1 ponto):</label>
+            <input type="number" id="notaExer" min="0" max="1" step="0.01" placeholder="0 a 1" required>
+
+            <label for="notaProj">Nota Projeto (máximo 2 pontos):</label>
+            <input type="number" id="notaProj" min="0" max="2" step="0.01" placeholder="0 a 2" required>
+
+            <label for="notaReg">Nota Regimental (máximo 5 pontos):</label>
+            <input type="number" id="notaReg" min="0" max="5" step="0.01" placeholder="0 a 5" required>
+
+            <button type="button" onclick="cadastrarAluno()">Cadastrar</button>
+            <button type="button" onclick="mostrarAlunos()">Mostrar</button>
+        </form>
+
+        <table id="tabelaAlunos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RGM</th>
+                    <th>Nota Parcial</th>
+                    <th>Nota Exercícios</th>
+                    <th>Nota Projeto</th>
+                    <th>Nota Regimental</th>
+                    <th>Nota Final</th>
+                    <th>Conceito</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Ex6.js"></script>
+</body>
+</html>
